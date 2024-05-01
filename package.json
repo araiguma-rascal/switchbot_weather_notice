@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "name": "switchbot_weather_notice",
+  "version": "1.0.0",
+  "description": "get weather and control light color",
+  "main": "index.js",
+  "author": "Rascal",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server.js",
+    "deploy": "gcloud app deploy --project switchbot-controller",
+    "update_webhook": "node src/update_webhook.js",
+    "ngrok": "ngrok http 8080 --scheme http,https"
+  }
+}
